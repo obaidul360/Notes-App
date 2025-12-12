@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:notes/src/all_file/all_provider/dark_provider.dart';
 import 'package:notes/src/all_file/all_provider/note_provider.dart';
-import 'package:notes/src/all_file/splash_ui.dart';
+import 'package:notes/src/all_file/splash/splash_ui.dart';
 import 'package:provider/provider.dart';
 
 void main() async {

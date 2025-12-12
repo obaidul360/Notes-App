@@ -4,7 +4,7 @@ import 'package:notes/src/all_file/home_screen/widgets/pop_up.dart';
 import 'package:provider/provider.dart';
 import '../all_provider/dark_provider.dart';
 import '../all_provider/note_provider.dart';
-import 'crud/edit_screen.dart';
+import 'edit/edit_screen.dart';
 
 class HomeNotePage extends StatelessWidget {
   @override
@@ -19,7 +19,10 @@ class HomeNotePage extends StatelessWidget {
           "Notes",
           style: TextStyle(fontWeight: FontWeight.w400, color: Colors.black),
         ),
-        leading: IconButton(onPressed: (){}, icon: Icon(Icons.more_vert,size: 35,)),
+        leading: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.more_vert, size: 35),
+        ),
         actions: [
           Switch(
             value: themeProvider.isDarkMode,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home_screen/home_screen.dart';
+import '../home_screen/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/logo.png"),
+            image: AssetImage("assets/notes_logo.png"),
             fit: BoxFit.fill,
           ),
         ),
