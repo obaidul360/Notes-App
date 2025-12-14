@@ -46,17 +46,23 @@ class _NoteEditorPageState extends State<NoteEditorPage> {
                 decoration: InputDecoration(hintText: "Body"),
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                if (widget.note == null) {
-                  provider.addNote(titleC.text, bodyC.text);
-                } else {
-                  provider.updateNote(widget.note!, titleC.text, bodyC.text);
-                }
-                Navigator.pop(context);
-              },
-              child: Text("Save"),
-            ),
+            Row(
+              children: [
+                Card(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      if (widget.note == null) {
+                        provider.addNote(titleC.text, bodyC.text);
+                      } else {
+                        provider.updateNote(widget.note!, titleC.text, bodyC.text);
+                      }
+                      Navigator.pop(context);
+                    },
+                    child: Text("Save"),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),

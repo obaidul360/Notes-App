@@ -16,12 +16,12 @@ class HomeNotePage extends StatelessWidget {
         automaticallyImplyLeading: false,
         centerTitle: true,
         title: Text(
-          "Notes",
+          "Notes App",
           style: TextStyle(fontWeight: FontWeight.w400, color: Colors.black),
         ),
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.more_vert, size: 35),
+          icon: Icon(Icons.more_vert, size: 34),
         ),
         actions: [
           Switch(
