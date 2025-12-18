@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:notes/src/all_file/all_provider/dark_provider.dart';
 import 'package:notes/src/all_file/all_provider/note_provider.dart';
 import 'package:notes/src/all_file/splash/splash_ui.dart';
-import 'package:notes/src/test_code.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
@@ -39,7 +38,7 @@ class MyApp extends StatelessWidget {
             themeMode: themeProvider.isDarkMode
                 ? ThemeMode.dark
                 : ThemeMode.light,
-            home: TestCode(),//SplashScreen(), //SplashScreen(),
+            home: SplashScreen(), //SplashScreen(),
           );
         },
       ),
